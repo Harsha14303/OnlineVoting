@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Voting System</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #e3f2fd, #ffffff);
+      scroll-behavior: smooth;
+    }
+    .navbar {
+      background-color: #0d6efd;
+      position: sticky;
+      top: 0;
+      z-index: 1020;
+      transition: 0.3s ease-in-out;
+    }
+    .navbar.scrolled { background-color: #084298; box-shadow: 0 2px 10px rgba(0,0,0,0.3); }
+    .navbar-brand { font-weight: 700; color: white !important; letter-spacing: 1px; }
+    .nav-link {
+      color: white !important; margin-right: 15px; font-weight: 500; position: relative; transition: 0.3s;
+    }
+    .nav-link:hover, .nav-link.active { color: #ffe600 !important; }
+    .nav-link::after {
+      content: ''; position: absolute; bottom: -3px; left: 0; width: 0%; height: 2px; background-color: #ffe600;
+      transition: width 0.3s ease-in-out;
+    }
+    .nav-link:hover::after { width: 100%; }
+    .party-card { transition: transform 0.3s, box-shadow 0.3s; }
+    .party-card:hover { transform: translateY(-8px); box-shadow: 0 6px 15px rgba(0,0,0,0.2); }
+    .btn:hover { transform: scale(1.05); transition: 0.2s; }
+    .fade-in { animation: fadeIn 1s ease-in-out; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    footer { background: #0d6efd; color: white; padding: 15px 0; margin-top: 50px; font-size: 0.9rem; }
+    footer a { color: #ffe600; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">🗳  Eelection Commission of India</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbarNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+          <li class="nav-item"><a class="nav-link" href="vote.html">Vote</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Section -->
+  <div class="container mt-5 p-4 bg-white rounded shadow fade-in">
+    <h2 class="text-center text-primary fw-bold mb-3">🗳 Welcome to the ECI Portal</h2>
+    <p class="text-center text-muted mb-4">Participate in fair, secure, and transparent elections.</p>
+
+    <div class="text-center mb-4">
+      <a href="register.html" class="btn btn-success me-3 px-4">Register Now</a>
+      <a href="login.html" class="btn btn-outline-primary px-4">Login to Vote</a>
+    </div>
+
+    <div class="row text-center g-4">
+      <div class="col-md-4">
+        <div class="card party-card border-primary">
+          <div class="card-body">
+            <h5 class="text-primary fw-bold">Secure Voting</h5>
+            <p>Your vote is protected using advanced encryption and security protocols.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card party-card border-success">
+          <div class="card-body">
+            <h5 class="text-success fw-bold">Real-Time Results</h5>
+            <p>Track live voting results as they update dynamically on the platform.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card party-card border-danger">
+          <div class="card-body">
+            <h5 class="text-danger fw-bold">Transparent Process</h5>
+            <p>Ensuring every member can cast only one vote for a fair election.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <p>© 2025 Online Voting System | Built by <a href="#">Sana Tanuja</a> & <a href="#">Harsha</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script>
+    window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) navbar.classList.add('scrolled');
+      else navbar.classList.remove('scrolled');
+    });
+  </script>
+</body>
+</html>

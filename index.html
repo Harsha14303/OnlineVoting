@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Election Commission of india</title>
+  <link rel="icon" href="https://tse4.mm.bing.net/th/id/OIP.9FACfxE1gg5wcy2hn4IXtgHaHa?pid=Api&P=0&h=180" style="border-radius: 50px;">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/4c17553c89.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="main.css">
+  
+</head>
+
+<body>
+  <!-- NAVBAR START -->
+  <section class="top-head">
+    <div class="container-fluid">
+      <div class="menu-toll-link">
+        <div class="menu-btn">
+          <button class="btn btn-outline-none " style="color: white; font-size: 18px; border-color: none;" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+            <span><i class="fa-solid fa-bars"></i> Menu</span>
+          </button>
+          <!-- OFF-CANVAS START -->
+          <div class="offcanvas offcanvas-top" style="margin-top: 30px;" tabindex="-3" id="offcanvasTop"
+            aria-labelledby="offcanvasTopLabel">
+
+            <section class="offcanvas-body"
+              style="display: flex;justify-content: space-between;background-color: #0e3983;color: white;">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="menu-list">
+                      <h4><a href="/electors" class="evm-vvpatheading">VOTERS</a></h4>
+                      <ul>
+                        <li><a target="_blank" href="https://voters.eci.gov.in/">Register in Electoral Roll</a></li>
+                        <li><a target="_blank" href="https://voters.eci.gov.in/">Track Application Status</a></li>
+                        <li><a target="_blank" href="https://voters.eci.gov.in/">Download E-EPIC</a></li>
+                        <li><a target="_blank" href="https://electoralsearch.eci.gov.in/">Search Electoral Roll</a></li>
+                        <li><a href="https://www.eci.gov.in/download-forms">Forms For Registration In Electoral Roll</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="menu-list" style="margin-top: 30px;">
+                      <ul>
+                        <li><a target="_blank" href="https://electoralsearch.eci.gov.in/pollingstation">Know Your
+                            Polling
+                            Booth</a></li>
+                        <li><a target="_blank" href="https://svp.eci.gov.in/">Service Voters</a></li>
+                        <li><a href="https://www.eci.gov.in/Overseas-voters">Overseas Voters</a></li>
+                        <li><a target="_blank" href="https://voters.eci.gov.in/home/ngsp">Register Complaint</a></li>
+                        <li><a href="https://www.eci.gov.in/voter-education">Voter Education</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="menu-list">
+                      <h4><a href="https://www.eci.gov.in/election-management" class="evm-vvpatheading">ELECTION
+                          MANAGEMENT</a></h4>
+                      <ul>
+                        <li><a href="https://www.eci.gov.in/election-management">Current Elections</a></li>
+                        <li><a href="https://www.eci.gov.in/assembly-election/">Past Assembly Elections</a></li>
+                        <li><a href="https://www.eci.gov.in/general-elections">Past Parliamentary Elections</a></li>
+                        <li><a href="https://www.eci.gov.in/bye-elections">Past Bye Elections</a></li>
+                        <li><a href="https://www.eci.gov.in/term-of-the-houses">Term of The Houses</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="menu-list" style="margin-top: 30px;">
+                      <ul>
+                        <li><a target="_blank" href="https://results.eci.gov.in/ResultAcGenNov2025/index.htm">Election
+                            Results</a></li>
+                        <li><a href="https://www.eci.gov.in/electoral-roll">Electoral Roll</a></li>
+                        <li><a href="https://www.eci.gov.in/mcc">Model Code of Conduct</a></li>
+                        <li><a href="https://www.eci.gov.in/judicial-reference">Judicial Reference</a></li>
+                        <li><a href="https://www.eci.gov.in/delimitation">Delimitation</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="menu-list">
+                      <h4 style="width: 300px;"><a href="https://www.eci.gov.in/candidate-politicalparty"
+                          class="evm-vvpatheading">POLITICAL
+                          PARTIES/CANDIDATE</a></h4>
+                      <ul>
+                        <li><a href="https://www.eci.gov.in/political-party-registration">Political Parties
+                            Registration</a>
+                        </li>
+                        <li><a href="https://www.eci.gov.in/election-symbol">Election Symbol</a></li>
+                        <li><a href="https://www.eci.gov.in/contribution-reports">Contribution Reports</a></li>
+                        <li><a href="https://www.eci.gov.in/expenditure-reports">Expenditure Report</a></li>
+                        <li><a href="https://www.eci.gov.in/disclosure-of-electoral-bonds">Disclosure of Electoral
+                            Bonds</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="menu-list" style="margin-top: 50px;">
+                      <ul>
+                        <li><a href="https://www.eci.gov.in/nomination-related-forms">Candidate Nomination and Other
+                            Forms</a>
+                        </li>
+                        <li><a href="https://www.eci.gov.in/affidavitt-portal">Candidate Affidavits</a></li>
+                        <li><a href="https://www.eci.gov.in/suvidha-candidate">Candidate App</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="menu-list">
+                      <h4><a href="https://www.eci.gov.in/media-publication" class="evm-vvpatheading">MEDIA &amp;
+                          PUBLICATIONS</a></h4>
+                      <ul>
+                        <li><a href="https://www.eci.gov.in/eci-publication">ECI Publications</a></li>
+                        <li><a href="https://www.eci.gov.in/compendium-of-instructions">Compendium of Instructions</a>
+                        </li>
+                        <li><a href="https://www.eci.gov.in/statistical-reports">Election Results &amp; Statistics</a>
+                        </li>
+                        <li><a href="https://www.eci.gov.in/narrative-reports-and-other-publication">Narrative Report
+                            &amp;
+                            Other Publications</a></li>
+                        <li><a href="https://www.eci.gov.in/electoral-statistics-pocket-books">Electoral Statistics
+                            Pocket
+                            Books</a></li>
+                        <li><a href="https://www.eci.gov.in/miscellaneous-statistics-and-papers">Miscellaneous
+                            Statistics
+                            &amp; Papers</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="menu-list">
+                      <h4><a href="https://www.eci.gov.in/evm-vvpat" class="evm-vvpatheading">EVM/VVPAT</a></h4>
+                      <ul>
+                        <li><a href="https://www.eci.gov.in/evm-vvpat">FAQs On EVM</a></li>
+                        <li><a href="https://www.eci.gov.in/evm-vvpat">Presentation on EVM</a></li>
+                        <li><a href="https://www.eci.gov.in/evm-vvpat">Status Paper on EVM</a></li>
+                        <li><a href="https://www.eci.gov.in/evm-vvpat">Manual on EVM And VVPAT</a></li>
+                        <li><a href="https://www.eci.gov.in/evm-vvpat">Legal History of EVMs And VVPATs</a></li>
+                      </ul>
+                    </div>
+
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="menu-list">
+                      <h4><a href="https://www.eci.gov.in/eci-officials" class="evm-vvpatheading">ECI OFFICIALS</a></h4>
+                      <ul>
+                        <li><a href="https://www.eci.gov.in/eci-officials">Quick Links For ECI Officials</a></li>
+                        <li><a href="https://www.eci.gov.in/issue-details-page/instructions">ECI Instructions</a></li>
+                        <li><a href="https://www.eci.gov.in/observer-portal-web">Observer Portal</a>
+                        </li>
+                      </ul>
+                    </div>
+
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="menu-list" style="margin-top: 30px;">
+                      <ul>
+                        <li><a href="https://www.eci.gov.in/handbooks-manuals-modelchecklist">Handbooks/Manuals/Model
+                            Check
+                            List</a></li>
+                        <li><a href="https://www.eci.gov.in/eBooks">eBooks</a></li>
+                        <li><a href="https://www.eci.gov.in/faq">FAQs</a></li>
+                      </ul>
+                    </div>
+
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="menu-list">
+                      <h4><a href="https://www.eci.gov.in/about-eci" class="evm-vvpatheading">About ECI</a></h4>
+                      <ul>
+                        <li><a href="https://www.eci.gov.in/about-eci">About ECI</a></li>
+                        <li><a href="https://www.eci.gov.in/honble-commission">Hon’ble Commission</a></li>
+                        <li><a href="https://www.eci.gov.in/former-cec-ec">Former CEC/EC </a></li>
+                      </ul>
+                    </div>
+
+
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="menu-list" style="margin-top: 30px;">
+                      <ul>
+                        <li><a href="https://www.eci.gov.in/officers-directory">Directory</a></li>
+                        <li><a href="https://www.eci.gov.in/international-corporation">International Cooperation</a>
+                        </li>
+                        <li><a href="https://www.eci.gov.in/photo-gallery">Media Gallery</a></li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="offcanvas-header" style="margin-top: -120px;">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+
+
+            </section>
+          </div>
+        </div>
+        <!-- OFF-CANVAS END -->
+        <div class="toll-links">
+          <span><a href="#top-head"><i class="fa-solid fa-house"></i></a></span>
+          <span class="toll-btn" style="color: rgb(186, 212, 230);">Toll Free - 1950</span>
+          <span class="soc-links">
+            <a target="_blank" href="https://www.facebook.com/ECI/" title="facebook" alt="facebook">
+              <i class="fa-brands fa-facebook-f"></i></a>
+            <a target="_blank" href="https://www.instagram.com/ecisveep/" title="instagram" alt="instagram"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" href="https://twitter.com/SpokespersonECI" title="X" alt="X"><i
+                class="fa-brands fa-x-twitter"></i></a>
+            <a target="_blank" href="https://www.youtube.com/eci" title="youtube" alt="youtube"><i
+                class="fa-brands fa-youtube"></i></a></span>
+          <span><a href="#top-head">HOME </a></span>
+          <span><a href="login.html">LOGIN</a></span>
+          <span><a href="register.html">REGISTRATION</a></span>
+          <span><a href="vote.html" target="_blank">VOTE </a></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- NAVBAR END -->
+
+  <!-- CAROUSEL START -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+        aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+        aria-label="Slide 6"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+        aria-label="Slide 7"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://www.eci.gov.in/eci-backend/public/banner/April/LV7UDvuhVid7K1h1744113187.jpg"
+          class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.eci.gov.in/eci-backend/public/banner/April/vBBRk9EV8GlbGkz1744697692.jpg"
+          class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.eci.gov.in/eci-backend/public/banner/April/liHnMmo58TqftZk1744717199.jpg"
+          class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.eci.gov.in/eci-backend/public/banner/April/aQ7kDOpqXgvSYYU1744697741.jpg"
+          class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.eci.gov.in/eci-backend/public/banner/April/6Sao2Hp3TA6Pz961744697768.jpg"
+          class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.eci.gov.in/eci-backend/public/banner/April/lK8IJDOv41Bid8Z1744697806.jpg"
+          class="d-block w-100" alt="...">
+      </div>
+
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- CAROUSEL END -->
+  <!-- PINK PRESS LINK STAR -->
+  <div class="press text-center" style="background-color: rgba(247, 239, 239, 0.962);">
+    <div class="fact-icon">
+      <a href="https://www.eci.gov.in/mythvsreality/">
+        <img src="https://www.eci.gov.in/newimg/icons/ge2024.png" width="25px">Myth Vs Reality</a>
+
+    </div>
+    <div class="fact-icon">
+      <a href="https://results.eci.gov.in/ResultAcGenNov2025/index.htm">
+        Election Results</a>
+
+    </div>
+    <div class="fact-icon">
+      <a href="https://www.eci.gov.in/ge-2024-photogallery">
+        Assembly Election : Photo Gallery</a>
+
+    </div>
+    <div class="fact-icon">
+      <a href="https://www.eci.gov.in/issue-details-page/press-releases">
+        <img src="https://www.eci.gov.in/newimg/icons/doc-press-01.png" width="20px">Press Releases</a>
+
+    </div>
+  </div>
+  <!-- PINK PRESS LINK END -->
+
+  <!-- COLOR PART LINKS -->
+  <section class="wrap-section " id="section1">
+    <div class="container-fluid text-center">
+      <div class="row gx-0 d-flex" style="height: 160px;display: flex;justify-content: space-evenly;">
+        <div class="col-md-2 col-6 mb-4">
+          <div class="icon-track green-icon">
+            <div class="icon-cricle" style="border-color: rgb(115, 207, 115);border-bottom: 10px ;">
+              <a rel="noopener noreferrer" href="/electors"></a>
+              <img src="https://www.eci.gov.in/newimg/icons/voter-services.png" alt="" title="Electors" width="60.8px"
+                height="60.8px">
+            </div>
+            <div class="down-arrow">
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+
+          <div class="track-title">
+            <a rel="noopener noreferrer" href="https://www.eci.gov.in/electors">Electors</a>
+          </div>
+        </div>
+        <div class="col-md-2 col-6 mb-4">
+          <div class="icon-track violte-icon">
+            <div class="icon-cricle" style="border-color: rgb(107, 41, 107);border-bottom: 10px ;">
+              <a rel="noopener noreferrer" href="/electors"></a>
+              <img src="https://www.eci.gov.in/newimg/icons/candidate-polparty.png" alt="" title="Electors" width="60px"
+                height="60px">
+            </div>
+            <div class="down-arrow">
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+
+          <div class="track-title">
+            <a rel="noopener noreferrer" href="https://www.eci.gov.in/candidate-politicalparty">Political Parties/Candidates</a>
+          </div>
+        </div>
+        <div class="col-md-2 col-6 mb-4">
+          <div class="icon-track red-icon">
+            <div class="icon-cricle" style="border-color:red ;border-bottom: red;border-bottom: 10px ;">
+              <a rel="noopener noreferrer" href="/electors"></a>
+              <img src="https://www.eci.gov.in/newimg/icons/election.png" alt="" title="Electors" width="60px"
+                height="60px">
+            </div>
+            <div class="down-arrow">
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+
+          <div class="track-title">
+            <a rel="noopener noreferrer" href="/electors">Election Management</a>
+          </div>
+        </div>
+        <div class="col-md-2 col-6 mb-4">
+          <div class="icon-track blue-icon">
+            <div class="icon-cricle" style="border-color: skyblue;border-bottom: 10px ;">
+              <a rel="noopener noreferrer" href="/electors"></a>
+              <img src="https://www.eci.gov.in/newimg/icons/publication.png" alt="" title="Electors" width="60px"
+                height="60px">
+            </div>
+            <div class="down-arrow">
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+
+          <div class="track-title">
+            <a rel="noopener noreferrer" href="https://www.eci.gov.in/election-management">Media & Publications</a>
+          </div>
+        </div>
+        <div class="col-md-2 col-6 mb-4">
+          <div class="icon-track yellow-icon">
+            <div class="icon-cricle" style="border-color: orange;border-bottom: 10px ;">
+              <a rel="noopener noreferrer" href="/electors"></a>
+              <img src="https://www.eci.gov.in/newimg/icons/voter-education.png" alt="" title="Electors" width="60px"
+                height="60px">
+            </div>
+            <div class="down-arrow">
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+
+          <div class="track-title">
+            <a rel="noopener noreferrer" href="https://www.eci.gov.in/voter-education">Voter Education</a>
+          </div>
+        </div>
+        <div class="col-md-2 col-6 mb-4">
+          <div class="icon-track gold-icon">
+            <div class="icon-cricle" style="border-color: rgb(255, 217, 0);border-bottom: 10px ;">
+              <a rel="noopener noreferrer" href="/electors"></a>
+              <img src="https://www.eci.gov.in/newimg/icons/ict-apps.png" alt="" title="Electors" width="60px"
+                height="60px">
+            </div>
+            <div class="down-arrow">
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+
+          <div class="track-title">
+            <a rel="noopener noreferrer" href="https://www.eci.gov.in/ict-app">ICT APPS</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- THREE CARD PANEL START -->
+
+
+  <!-- Here we can also use padding-top,padding-bottom instead of py -->
+  <div class="container mt-5 py-5" >
+    <div class="row g-4" id="cardf">
+
+      <!--  ELECTORS  -->
+
+      <div class="col-md-4">
+        <div class="section-box" style=" background-color: #fdf1f7;">
+          <h4>Electors</h4>
+
+          <div class="menu-item">Register Now To Vote <i class="fa-solid fa-arrow-right"></i></div>
+          <div class="menu-item">Check Application Status <i class="fa-solid fa-arrow-right"></i></div>
+          <div class="menu-item">Know Your Polling Booth <i class="fa-solid fa-arrow-right"></i></div>
+          <div class="menu-item">Search Name in Voter List <i class="fa-solid fa-arrow-right"></i></div>
+          <div class="menu-item">Register Complaint <i class="fa-solid fa-arrow-right"></i></div>
+
+          <button class="know-more-btn" style="background-color: rgb(63, 190, 240);">Know More</button>
+        </div>
+      </div>
+
+      <!-- POLITICAL PARTY / CANDIDATE  -->
+
+      <div class="col-md-4">
+        <div class="section-box blue">
+          <h4>Political Party / Candidate</h4>
+
+          <div class="menu-item">New Party Registration <i class="fa-solid fa-arrow-right"></i></div>
+          <div class="menu-item">Election Symbol Allotment <i class="fa-solid fa-arrow-right"></i></div>
+          <div class="menu-item">Nomination <i class="fa-solid fa-arrow-right"></i></div>
+          <div class="menu-item">e-Affidavit <i class="fa-solid fa-arrow-right"></i></div>
+          <div class="menu-item">Permission <i class="fa-solid fa-arrow-right"></i></div>
+
+          <button class="know-more-btn" style="background-color: rgb(63, 190, 240);">Know More</button>
+        </div>
+      </div>
+
+      <!--  ECI OFFICIALS  -->
+
+      <div class="col-md-4">
+        <div class="section-box" style="background-color: #fdf1f7;">
+          <h4>ECI Officials</h4>
+
+          <div class="menu-item">Handbooks / Manuals / Checklist <i class="fa-solid fa-arrow-right"></i></div>
+          <div class="menu-item">Compendium of Instructions <i class="fa-solid fa-arrow-right"></i></div>
+          <div class="menu-item">Postal Ballots <i class="fa-solid fa-arrow-right"></i></div>
+          <div class="menu-item">Service Voter Portal <i class="fa-solid fa-arrow-right"></i></div>
+          <div class="menu-item">Observer Portal <i class="fa-solid fa-arrow-right"></i></div>
+
+          <button class="know-more-btn"  style="background-color: rgb(63, 190, 240);">Know More</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <style>
+    body {
+      background: #f1f5f9;
+    }
+
+    .right-box {
+      background: #001f54;
+      padding: 40px 20px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    .section-title {
+      font-size: 22px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 15px;
+      margin-top: 15px;
+    }
+
+    .underline {
+      width: 60px;
+      height: 3px;
+      background: #00b4ff;
+      margin: auto;
+      margin-top: 5px;
+      margin-bottom: 25px;
+    }
+
+    .btn-election {
+      width: 100%;
+      padding: 15px;
+      font-weight: 600;
+      border-radius: 12px;
+      font-size: 16px;
+      border: none;
+    }
+
+    .btn-light-custom {
+      background: #e7e1db;
+      /* For Brown Button */
+      color: rgba(198, 153, 75)
+    }
+
+    .btn-blue-custom {
+      background: #b3d8ef;
+      /* For blue button */
+      color: rgba(68, 155, 194);
+    }
+
+    .btn-purple-custom {
+      background: #e5c1e5;
+      color: rgba(162, 25, 138);
+      /* For pink button */
+    }
+  </style>
+
+  <div class="container-fluid p-4">
+    <div class="row">
+
+      <!-- LEFT SIDE — MAP -->
+      <div class="col-md-6 mb-4">
+        <h5 class="text-center mb-3">Visit Our State CEO's Website to Get State Specific Information & Updates</h5>
+        <img src="https://www.toptourguide.com/indialarge.gif" class="img-fluid w-100">
+      </div>
+
+      <!-- RIGHT SIDE ELECTION BOX -->
+      <div class="col-md-6">
+        <div class="right-box">
+
+          <!-- Current Elections -->
+          <div>
+            <h5 class="section-title">Current Elections</h5>
+            <div class="underline"></div>
+
+            <div class="row g-3">
+              <div class="col-6">
+                <button class="btn-election btn-light-custom">Bihar</button>
+              </div>
+              <div class="col-6">
+                <button class="btn-election btn-blue-custom">Bye Elections</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Previous Elections -->
+          <div>
+            <h5 class="section-title">Previous Elections</h5>
+            <div class="underline"></div>
+
+            <div class="row g-3">
+              <div class="col-6"><button class="btn-election btn-purple-custom">Vice-Presidential Elections</button>
+              </div>
+              <div class="col-6"><button class="btn-election btn-blue-custom">Bye Elections</button></div>
+
+              <div class="col-6"><button class="btn-election btn-light-custom">NCT of Delhi</button></div>
+              <div class="col-6"><button class="btn-election btn-light-custom">Maharashtra</button></div>
+
+              <div class="col-6"><button class="btn-election btn-blue-custom">Jharkhand</button></div>
+              <div class="col-6"><button class="btn-election btn-purple-custom">GE to Lok Sabha 2024</button></div>
+
+              <div class="col-6"><button class="btn-election btn-blue-custom">Assembly Elections</button></div>
+              <div class="col-6"><button class="btn-election btn-blue-custom">Bye Elections</button></div>
+            </div>
+          </div>
+
+          <!-- Past Elections -->
+          <div>
+            <h5 class="section-title">Past Elections</h5>
+            <div class="underline"></div>
+
+            <div class="row g-3">
+              <div class="col-6"><button class="btn-election btn-light-custom">Presidential Elections</button></div>
+              <div class="col-6"><button class="btn-election btn-blue-custom">Vice-Presidential Elections</button>
+              </div>
+
+              <div class="col-12"><button class="btn-election btn-purple-custom">Lok-Sabha Elections</button></div>
+
+              <div class="col-6"><button class="btn-election btn-blue-custom">Assembly Elections</button></div>
+              <div class="col-6"><button class="btn-election btn-blue-custom">Bye Elections</button></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- PINK INDIA WITH IMAGE START -->
+  <section class="content-tab">
+    <div class="tab-content lt-purple-bg">
+      <div class="container">
+        <div class="row" style="display: flex;justify-content: space-between;">
+          <div class="col-md-4 col-12">
+            <figure><img src="https://www.eci.gov.in/newimg/about-img3.png" alt="" class="hill" width="300px"
+                height="300px" title="India International Institute of Democracy and Election Management"></figure>
+          </div>
+          <div class="col-md-8 col-12">
+            <div class="context">
+              <h5 style="text-align: start;">India International Institute of Democracy and Election Management</h5>
+              <p style="text-align: start;">The Election Commission of India (ECI), established the India
+                International Institute of Democracy
+                and Election Management (IIIDEM) to advance its professional competence in election management,
+                promote peoples participation, contribute to developing stronger democratic institutions and support
+                the efforts of ECI in carrying out its mandate and functions.</p>
+              <p style="text-align: start;">Over the last six decades, the structure and functions of the Election
+                Commission have undergone
+                major changes and thus the management of elections has become increasingly complex. A rapid
+                transformation in social context and reality, rising number of political parties, changing dynamics
+                and demands of coalitions and alliances, frequent elections and bye-elections, increase in number of
+                eligible voters and continuous updating of electoral rolls have led to new challenges for election
+                management bodies of today.</p>
+              <div class="custom-btns-align text-center"
+                style="margin-left: 80%;background-color: rgb(15, 80, 105);padding: 7px; border-radius: 20px;">
+                <a href="https://iiidem.eci.gov.in/" class="dark-blue-btn" target="_blank"
+                  style="color: white; text-decoration: none;">Know More <i class="fa fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- PINK INDIA WITH IMAGE END -->
+    <!-- BLUE SACHIN PART START -->
+    <div class="tab-content1 p-3" style="background-color: rgb(2,36,140);height: 350px;">
+      <a href="/voter-education">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 col-12">
+              <div class="context">
+                <figure class="sveep-logo"><img src="/newimg/Sveep-logo-01.png" alt=""></figure>
+                <h5 class="sveep-head" style="color: white;text-align: start; text-decoration: none;">Systematic
+                  Voters’ Education and Electoral Participation
+                </h5>
+                <p class="sveep-para" style="color: white; text-align: start; text-decoration: none;">Systematic
+                  Voters’ Education and Electoral Participation
+                  program, better known as SVEEP, is the flagship program of the Election Commission of India for
+                  voter education,
+                  spreading voter awareness and promoting voter literacy in India. Since 2009, we have been working
+                  towards preparing India’s electors and equipping them with basic knowledge related to the
+                  electoral process.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-md-6 padding-0" style="margin-top: 30px;">
+                  <img src="https://www.eci.gov.in/newimg/sachin-01.png" alt="Sachin Tendulkar" width="300px"
+                    title="Sachin Tendulkar" class="sach">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+  <!-- FOOTER START  -->
+  <footer class="text-white pt-5 pb-3" style="margin-top: 50px;">
+
+    <div class="container">
+
+      <div class="row" style="text-align: justify; ">
+
+        <!-- Left Section -->
+        <div class="col-md-4 mb-4" style="border: 1px solid grey;border-radius: 10px;padding-top: 20px;">
+          <h4 class="mb-3">Election Commission of India</h4>
+          <div class="d-flex mb-3">
+            <img src="https://www.eci.gov.in/newimg/eci-logo-white.svg" width="90px" alt="">
+
+            <p>
+              The Election Commission of India is an autonomous constitutional authority
+              responsible for administering election processes in India. The body
+              administers elections to the Lok Sabha, Rajya Sabha, State Legislative
+              Assemblies in India, and the offices of the President and Vice President in the country.
+            </p>
+          </div>
+
+          <p class="mt-3" style="padding-left: 20px;">
+            <i class="bi bi-geo-alt-fill"></i> Nirvachan Sadan, Ashoka Road, New Delhi 110001
+          </p>
+
+          <!-- Social Icons -->
+          <div class="mt-3">
+            <a href="#" class="text-white me-3 fs-4"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white me-3 fs-4"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white fs-4"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Middle Image Section -->
+        <div class="col-md-4 text-center mb-4">
+          <img src="https://www.eci.gov.in/newimg/ticket-24.png" class="img-fluid" alt="">
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-4 mb-4">
+          <h4 class="mb-3">Quick Links</h4>
+
+          <div class="row">
+            <div class="col-6">
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white text-decoration-none d-block mb-2">About ECI</a></li>
+                <li><a href="#" class="text-white text-decoration-none d-block mb-2">Directory</a></li>
+                <li><a href="#" class="text-white text-decoration-none d-block mb-2">Contact Us</a></li>
+                <li><a href="#" class="text-white text-decoration-none d-block mb-2">Public Grievance</a></li>
+                <li><a href="#" class="text-white text-decoration-none d-block mb-2">RTI Online</a></li>
+                <li><a href="#" class="text-white text-decoration-none d-block mb-2">eOffice</a></li>
+              </ul>
+            </div>
+
+            <div class="col-6">
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white text-decoration-none d-block mb-2">Apply for Voter Card</a></li>
+                <li><a href="#" class="text-white text-decoration-none d-block mb-2">Service Voter Portal</a></li>
+                <li><a href="#" class="text-white text-decoration-none d-block mb-2">Download cVIGIL</a></li>
+                <li><a href="#" class="text-white text-decoration-none d-block mb-2">Candidate Affidavits</a></li>
+                <li><a href="#" class="text-white text-decoration-none d-block mb-2">MCC Cases</a></li>
+                <li><a href="#" class="text-white text-decoration-none d-block mb-2">Site Map</a></li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="col-6">
+            <h4 class="mt-4">ECI Apps Links</h4>
+            <div class="d-flex mt-3">
+              <img src="https://www.eci.gov.in/newimg/icons/ict/voter-helpline.png" width="60" class="me-3">
+              <img src="https://www.eci.gov.in/newimg/icons/ict/saksham-eci.png" width="60" class="me-3">
+              <img src="https://www.eci.gov.in/newimg/icons/ict/kyc-eci.png" width="60" class="me-3">
+              <img src="https://www.eci.gov.in/newimg/icons/ict/cVigil.png" width="60">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="text-center mt-4 pt-3 border-top border-light">
+      © Copyright Election Commission of India 2025
+    </div>
+
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

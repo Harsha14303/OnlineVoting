@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vote | Online Voting System</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<style>
+  body { font-family: 'Poppins', sans-serif; background: linear-gradient(135deg, #e3f2fd, #fff); }
+  .navbar { background-color: #0d6efd; position: sticky; top: 0; z-index: 1020; }
+  .nav-link { color: white !important; margin-right: 15px; font-weight: 500; }
+  .nav-link:hover, .nav-link.active { color: #ffe600 !important; }
+  .party-card { transition: transform 0.3s, box-shadow 0.3s; }
+  .party-card:hover { transform: translateY(-8px); box-shadow: 0 6px 15px rgba(0,0,0,0.2); }
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">🗳  Eelection Commission of India</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+        <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+        <li class="nav-item"><a class="nav-link active" href="vote.html">Vote</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5 bg-white p-4 rounded shadow text-center">
+  <h3 class="text-primary mb-3">Cast Your Vote</h3>
+  <div class="row g-3">
+    <div class="col-md-4">
+      <div class="card party-card border-primary">
+        <div class="card-body">
+          <h5 class="text-primary fw-bold">Party A</h5>
+          <p>Leader: Ms. Sana</p>
+         <a href="success.html"> <button class="btn btn-outline-primary">Vote Party A</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card party-card border-success">
+        <div class="card-body">
+          <h5 class="text-success fw-bold">Party B</h5>
+          <p>Leader: Ms. Ambica</p>
+         <a href="success.html" ><button class="btn btn-outline-success">Vote Party B</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card party-card border-danger">
+        <div class="card-body">
+          <h5 class="text-danger fw-bold">Party C</h5>
+          <p>Leader: Mr. Harsha</p>
+         <a href="success.html"> <button class="btn btn-outline-danger">Vote Party C</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
